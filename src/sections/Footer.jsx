@@ -1,8 +1,8 @@
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const socials = [
-  {icon: FaInstagram, label: "Instagram", href: "https://www.instagram.com/mdtech05/"},
+  {icon: FaFacebook, label: "Facebook", href: "https://www.facebook.com/mdtech05"},
   {icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/moattar-ansari"},
   {icon: FaGithub, label: "GitHub", href: "https://github.com/MoattarAnsari385"},
 ]

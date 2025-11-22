@@ -11,28 +11,32 @@ import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
 import Testimonials from "./sections/Testimonials"
 import React from "react"
+import emailjs from "@emailjs/browser";
+
+// Initialize EmailJS
+emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
 
 const App = () => {
   const[introDone, setIntroDone] = React.useState(false);
   return (
-<>
-{!introDone && <IntroAnimation onFinish={() => setIntroDone(true)}/>}
-{introDone && (
-    <div className="relative gradient text-white">
-      <CustomCursor/>
-      <ParticlesBackground />
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
-    )}
-</>
+    <>
+      {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)}/>}
+      {introDone && (
+        <div className="relative gradient text-white">
+          <CustomCursor/>
+          <ParticlesBackground />
+          <Navbar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
+      )}
+    </>
   )
 }
 

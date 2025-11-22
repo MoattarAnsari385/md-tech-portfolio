@@ -1,13 +1,13 @@
 import ParticlesBackground from "../components/ParticlesBackground";
 import React, { useMemo } from "react";
 import { motion} from 'framer-motion'
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import avator from "../assets/avator.png"
 
 const socials = [
-  { Icon: FaInstagram, label: "Instagram", href: "https://www.instagram.com/mdtech05/" },
-  { Icon: FaGithub, label: "GitHub", href: "https://github.com/MoattarAnsari385" },
-  { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fatima-developer/" },
+  {Icon: FaFacebook, label: "Facebook", href: "https://www.facebook.com/mdtech05"},
+  {Icon: FaGithub, label: "GitHub", href: "https://github.com/MoattarAnsari385"},
+  {Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/fatima-developer/"},
 ];
 
 const glowVariants = {
